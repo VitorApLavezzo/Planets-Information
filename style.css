@@ -1,0 +1,82 @@
+.links {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links a {
+    margin: 25px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none
+}
+.links a:hover {
+    opacity: 0.7;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: rgb(74, 107, 139);   
+    color: white;
+}
+
+.navbar img {
+    width: 250px;
+    height: 200px;
+    margin-right: -80px;
+    margin-top: -15px;
+    margin-left: -30px;
+    margin-bottom: -35px;
+}
+
+footer {
+    width: 99.2%;
+    position: absolute;
+    bottom: 0;
+    padding: 30px 0px;
+    background-color: rgb(74, 107, 139);
+    color: white;
+    margin-bottom: 10px;
+}
+
+.rodape {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: auto;
+    margin-top: -30px;
+}
+
+.textoprin {
+    font-size: 16px;
+    max-width: 250px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+.box__footer{
+    text-align: center;
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+.box__footer h1 {
+    margin-bottom: 5px;
+    color: white;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none
+}
+
+.box__footer a:hover{
+    opacity: 0.7;
+}
