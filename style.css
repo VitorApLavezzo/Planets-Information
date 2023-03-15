@@ -3,7 +3,18 @@
     margin-right: auto;
 }
 
-.links a {
+.dropdown span {
+    margin: 25px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none
+}
+
+.dropdown span:hover{
+    opacity: 0.7;
+}
+
+.links a  {
     margin: 25px;
     font-size: 20px;
     color: white;
@@ -12,6 +23,25 @@
 .links a:hover {
     opacity: 0.7;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(74, 107, 139);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 .navbar{
     display: flex;
@@ -30,8 +60,8 @@
 }
 
 footer {
-    width: 99.2%;
-    position: absolute;
+    width: 100%;
+    position: relative;
     bottom: 0;
     padding: 30px 0px;
     background-color: rgb(74, 107, 139);
