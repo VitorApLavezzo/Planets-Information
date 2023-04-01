@@ -58,3 +58,13 @@ document.addEventListener("mousemove", dragging);
 carousel.addEventListener("touchmove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
+
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+  }

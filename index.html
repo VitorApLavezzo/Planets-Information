@@ -1,73 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Planets Informations</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="css/background.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/background.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
-</head>
+  </head>
 
-<body>
-    <section class="wrapper">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
+  <body>
+    <div class="navbar" id="myTopnav">
+      <img src="img/logo.png" />
+      <div class="links">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        <a href="#" class="active">HOME</a>
+        <div class="dropdown">
+          <span href="#">PLANETS</span>
+          <div class="dropdown-content">
+            <a href="#">MERCÚRIO</a>
+            <a href="#">VÊNUS</a>
+            <a href="#">TERRA</a>
+            <a href="#">MARTE</a>
+            <a href="#">JÚPITER</a>
+            <a href="#">SATURNO</a>
+            <a href="#">URANO</a>
+            <a href="#">NETUNO</a>
+          </div>
         </div>
-    </section>
-
-    <div class="navbar">
-        <img src="img/logo.png" />
-        <div class="links">
-            <a href="#">HOME</a>
-            <div class="dropdown">
-                <span href="#">PLANETS</span>
-                <div class="dropdown-content">
-                    <a href="#">MERCÚRIO</a>
-                    <a href="#">VÊNUS</a>
-                    <a href="#">TERRA</a>
-                    <a href="#">MARTE</a>
-                    <a href="#">JÚPITER</a>
-                    <a href="#">SATURNO</a>
-                    <a href="#">URANO</a>
-                    <a href="#">NETUNO</a>
-                    </div>
-            </div>
-            <a href="#">ABOUT US</a>
-            <a href="#">CONTACT</a>
-        </div>
+        <a href="#">ABOUT US</a>
+        <a href="#">CONTACT</a>
+      </div>
     </div>
 
     <div class="wrapper">
-        <i id="left" class="fa-solid fa-angle-left"></i>
-        <div class="carousel">
-          <img src="img/img-1.jpg" alt="img" draggable="false">
-          <img src="img/img-2.jpg" alt="img" draggable="false">
-          <img src="img/img-3.jpg" alt="img" draggable="false">
-          <img src="img/img-4.jpg" alt="img" draggable="false">
-          <img src="img/img-5.jpg" alt="img" draggable="false">
-          <img src="img/img-6.jpg" alt="img" draggable="false">
-          <img src="img/img-7.jpg" alt="img" draggable="false">
-          <img src="img/img-8.jpg" alt="img" draggable="false">
-        </div>
-        <i id="right" class="fa-solid fa-angle-right"></i>
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <div class="carousel">
+        <img src="img/img-1.jpg" alt="img" draggable="false" />
+        <img src="img/img-2.jpg" alt="img" draggable="false" />
+        <img src="img/img-3.jpg" alt="img" draggable="false" />
+        <img src="img/img-4.jpg" alt="img" draggable="false" />
+        <img src="img/img-5.jpg" alt="img" draggable="false" />
+        <img src="img/img-6.jpg" alt="img" draggable="false" />
+        <img src="img/img-7.jpg" alt="img" draggable="false" />
+        <img src="img/img-8.jpg" alt="img" draggable="false" />
       </div>
+      <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+
+    <h1>Você sabe o que é o Sistema Solar?</h1>
+    <p>
+      O Sistema Solar é um conjunto de astros que orbitam ao redor do Sol, a
+      estrela central. O nosso sistema é formado por oito planetas (Mercúrio,
+      Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno) além de 5 planetas
+      anões e centenas de satélites naturais, asteroides, meteoros e cometas.
+    </p>
 
     <footer>
-        <div class="rodape">
-            <div class="textoprin">
-            <h3>Site com foco principal em astronomia e passar informações sobre os planetas</h3>
-            </div>
-            <div class="box__footer">
-                <h1>Páginas do Site</h1>
-                <a href="#">HOME</a>
-                <a href="#">PLANETS</a>
-                <a href="#">ABOUT US</a>
-                <a href="#">CONTACT</a>
-            </div>
+      <div class="rodape">
+        <div class="textoprin">
+          <h3>
+            Site com foco principal em astronomia e passar informações sobre os
+            planetas
+          </h3>
         </div>
+        <div class="box__footer">
+          <h1>Páginas do Site</h1>
+          <a href="#">HOME</a>
+          <a href="#">PLANETS</a>
+          <a href="#">ABOUT US</a>
+          <a href="#">CONTACT</a>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
