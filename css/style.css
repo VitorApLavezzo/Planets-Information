@@ -19,12 +19,11 @@ h1 {
   text-align: center;
 }
 
-p { 
+p {
   color: #fff;
   text-align: center;
   font-size: 20px;
   margin-bottom: 30px;
-
 }
 
 /* NavBar */
@@ -39,6 +38,17 @@ p {
 
 .navbar .icon {
   display: none;
+}
+
+.navbar .icon i {
+  font-size: 30px;
+  transition: all 1s;
+}
+
+.navbar .icon i:hover {
+  color: #f3f3f3;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
 }
 
 .navbar img {
@@ -110,7 +120,8 @@ p {
 }
 
 @media screen and (max-width: 700px) {
-  .navbar a:not(:first-child), .dropdown .dropbtn{
+  .navbar a:not(:first-child),
+  .dropdown .dropbtn {
     display: none;
   }
   .navbar a.icon {
@@ -120,7 +131,9 @@ p {
 }
 
 @media screen and (max-width: 700px) {
-  .navbar.responsive {position: relative;}
+  .navbar.responsive {
+    position: relative;
+  }
   .navbar.responsive a.icon {
     position: absolute;
     right: 0;
@@ -132,8 +145,12 @@ p {
     text-align: center;
   }
 
-.navbar.responsive .dropdown {float: inline-end;}
-  .navbar.responsive .dropdown-content {position: absolute;}
+  .navbar.responsive .dropdown {
+    float: inline-end;
+  }
+  .navbar.responsive .dropdown-content {
+    position: absolute;
+  }
   .navbar.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
