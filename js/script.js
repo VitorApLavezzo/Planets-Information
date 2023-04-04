@@ -62,9 +62,9 @@ carousel.addEventListener("touchend", dragStop);
 
 function myFunction() {
     var x = document.getElementById("myTopnav");
-    if (x.className === "navbar") {
+    if (x.className === "myTopnav") {
       x.className += " responsive";
     } else {
-      x.className = "navbar";
+      x.className = "myTopnav";
     }
   }
