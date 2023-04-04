@@ -85,6 +85,7 @@ p {
 
 .dropdown .dropbtn {
   font-weight: bold;
+  cursor: pointer;
   background-color: inherit;
   outline: none;
   border: none;
