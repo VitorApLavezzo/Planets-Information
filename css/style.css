@@ -156,13 +156,13 @@ p {
     text-align: center;
   }
 
-  .navbar.responsive .dropdown {
+  .myTopnav.responsive .dropdown {
     float: inline-end;
   }
-  .navbar.responsive .dropdown-content {
+  .myTopnav.responsive .dropdown-content {
     position: absolute;
   }
-  .navbar.responsive .dropdown .dropbtn {
+  .myTopnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
     text-align: center;
