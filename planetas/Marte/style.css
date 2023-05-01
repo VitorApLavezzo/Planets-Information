@@ -2,7 +2,7 @@
   float: left;
   width: 100%;
   margin-top: 10px;
-  /* background-color: rgb(255, 0, 0);*/
+  /* background-color: rgb(255, 0, 0); */
 }
 
 .Imagens_Marte img {
@@ -25,62 +25,85 @@
   padding-top: 15px;
 }
 
-.Dir p {
-  color: white;
-  text-align: left;
-  font-size: 18px;
-  padding-left: 10px;
-}
-
 .TextRig {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   margin-top: 15px;
-  width: 350px;
-  height: 500px;
+  padding: 10px;
+  width: 29%;
+  height: 700px;
   float: right;
-  background-color: rgba(100, 84, 80, 0.3);
+  background-color: rgba(100, 84, 80, 0.4);
   border-radius: 25px;
 }
 
 .TextRig p {
   color: white;
-  text-align: left;
-  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 20px;
   padding-left: 10px;
+  padding: 10px;
+}
+
+.TextRig h1 {
+  font-size: 30px;
+  text-decoration: underline;
+  text-align: center;
+  padding: 10px;
 }
 
 .TextLef {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   margin-top: 15px;
-  width: 350px;
-  height: 500px;
+  width: 29%;
+  height: 700px;
   float: left;
   background-color: rgba(61, 50, 47, 0.3);
   border-radius: 25px;
+}
+
+.TextLef p {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding: 10px;
+}
+
+.TextLef h1 {
+  text-decoration: underline;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
 }
 
 .TextMid {
   position: relative;
   margin-top: 15px;
-  width: 350px;
-  height: 500px;
+  width: 400px;
+  height: 100%;
   float: left;
   background-color: rgba(61, 50, 47, 0.3);
   border-radius: 25px;
-  margin-left: 35%;
-  margin-bottom: 28%;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 13%;
 }
 
 .TextMid p {
   text-align: left;
-  padding-left: 10px;
+  font-size: 20px;
+  padding: 10px;
 }
 
-.TextCenter {
-  margin-top: 15px;
-  width: 350px;
-  float: left;
-  border-radius: 25px;
-  margin-left: 26.5%;
+.TextMid h1 {
   text-align: center;
+  padding: 15px;
 }
 
 * {
@@ -94,9 +117,9 @@ html {
   position: absolute;
   display: flex;
   padding: 0 35px;
-  align-items: center;
   justify-content: center;
-  background: linear-gradient(#000000, #000000, #fd976f, #ff3c00, #ff3c00);
+  align-items: center;
+  background: linear-gradient(#000000, #fd976f, #ff3c00, #ff3c00);
 }
 
 h1 {

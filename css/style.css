@@ -53,11 +53,6 @@ p {
   transition: all 1s;
 }
 
-.navbar .icon i:hover {
-  color: #f3f3f3;
-  -webkit-transform: rotateZ(180deg);
-  transform: rotateZ(180deg);
-}
 
 .myTopnav img {
   width: 250px;
@@ -132,7 +127,7 @@ p {
 
 @media screen and (max-width: 700px) {
   .myTopnav a:not(:first-child),
-  .dropdown .dropbtn {
+  .dropdown .dropbtn{
     display: none;
   }
   .myTopnav a.icon {
@@ -145,7 +140,7 @@ p {
   .myTopnav.responsive {
     position: relative;
   }
-  .myTopnav.responsive a.icon {
+  .myTopnav.responsive  a.icon {
     position: absolute;
     right: 0;
     top: 0;
