@@ -47,11 +47,63 @@ img{
 
 }
 
+.globe2 {
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  background-image: url(https://cdn.pixabay.com/photo/2020/02/04/17/12/map-4818876_1280.jpg);
+  background-size: cover;
+  box-shadow: -25px -25px 25px black inset, 10px 10px 30px rgb(255, 219, 172) inset, 0px 0px 20px  #3a96ff;
+  animation: rotate 15s linear infinite;
+  margin-bottom: 30px;
+
+}
+
+.globe3 {
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  background-image: url(../Marte/img/4.jpeg);
+  background-size: cover;
+  box-shadow: -25px -25px 25px black inset, 10px 10px 30px rgb(218, 114, 114) inset, 0px 0px 20px  #d31710;
+  animation: rotate 15s linear infinite;
+  margin-bottom: 30px;
+
+}
+
+.globe4 {
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  background-image: url(../Saturno/imagens/4.jpeg);
+  background-size: cover;
+  box-shadow: -25px -25px 25px black inset, 10px 10px 30px rgb(242, 199, 199) inset, 0px 0px 20px  #fed0ce;
+  animation: rotate 15s linear infinite;
+  margin-bottom: 30px;
+
+}
+
+.globe5 {
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  background-image: url(../4.jpeg);
+  background-size: cover;
+  box-shadow: -25px -25px 25px black inset, 10px 10px 30px rgb(47, 172, 255) inset, 0px 0px 20px  #4f70f6;
+  animation: rotate 15s linear infinite;
+  margin-bottom: 30px;
+
+}
+
 @keyframes rotate{
   to{background-position: 100%;}
 }
 
-/* NavBar */
+/* Navabar */
 
 .myTopnav {
   display: flex;
@@ -69,12 +121,6 @@ img{
 .myTopnav .icon i {
   font-size: 30px;
   transition: all 1s;
-}
-
-.navbar .icon i:hover {
-  color: #f3f3f3;
-  -webkit-transform: rotateZ(180deg);
-  transform: rotateZ(180deg);
 }
 
 .myTopnav img {
@@ -174,13 +220,13 @@ img{
     text-align: center;
   }
 
-  .navbar.responsive .dropdown {
+  .myTopnav.responsive .dropdown {
     float: inline-end;
   }
-  .navbar.responsive .dropdown-content {
+  .myTopnav.responsive .dropdown-content {
     position: absolute;
   }
-  .navbar.responsive .dropdown .dropbtn {
+  .myTopnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
     text-align: center;
