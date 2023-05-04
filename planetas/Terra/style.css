@@ -34,7 +34,7 @@ img{
   color: white;
 }
 
-.globe {
+/* .globe {
   width: 300px;
   height: 300px;
   border: 1px solid white;
@@ -97,7 +97,7 @@ img{
   animation: rotate 15s linear infinite;
   margin-bottom: 30px;
 
-}
+} */
 
 @keyframes rotate{
   to{background-position: 100%;}
