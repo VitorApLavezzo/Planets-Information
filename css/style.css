@@ -10,32 +10,35 @@ html {
   padding: 0 35px;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(#2e547f, #2e547f,#5e3a7a,#25292f, #25292f) ;
+  background: linear-gradient(#2e547f, #2e547f, #5e3a7a, #25292f, #25292f);
 }
 
 h1 {
+  font-family: "Space Mono", monospace;
   color: #fff;
   margin-bottom: 30px;
   text-align: center;
 }
 
-p {
+p { 
   color: #fff;
   text-align: center;
   font-size: 20px;
   margin-bottom: 30px;
 }
 
-.texto{
+.texto {
+  font-family: "Space Mono", monospace;
   border-radius: 10px;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.2);
   margin-bottom: 50px;
 }
 
-/* NavBar */
+/* Navabar */
 
 .myTopnav {
+  font-family: "Space Mono", monospace;
   display: flex;
   border-radius: 10px;
   margin-top: 10px;
@@ -53,7 +56,6 @@ p {
   transition: all 1s;
 }
 
-
 .myTopnav img {
   width: 250px;
   height: 200px;
@@ -61,6 +63,13 @@ p {
   margin-top: -15px;
   margin-left: -30px;
   margin-bottom: -35px;
+}
+
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.1;
+  text-decoration: none;
 }
 
 .links {
@@ -117,8 +126,10 @@ p {
   color: #fff;
   text-decoration: none;
   display: block;
-  font-size: 17px;
-  text-align: left;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  padding: 6px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -126,10 +137,12 @@ p {
 }
 
 @media screen and (max-width: 700px) {
+
   .myTopnav a:not(:first-child),
-  .dropdown .dropbtn{
+  .dropdown .dropbtn {
     display: none;
   }
+
   .myTopnav a.icon {
     float: right;
     display: block;
@@ -140,11 +153,13 @@ p {
   .myTopnav.responsive {
     position: relative;
   }
-  .myTopnav.responsive  a.icon {
+
+  .myTopnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
+
   .myTopnav.responsive a {
     float: none;
     display: block;
@@ -154,9 +169,11 @@ p {
   .myTopnav.responsive .dropdown {
     float: inline-end;
   }
+
   .myTopnav.responsive .dropdown-content {
     position: absolute;
   }
+
   .myTopnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
@@ -167,6 +184,7 @@ p {
 /* Rodapé */
 
 footer {
+  font-family: "Space Mono", monospace;
   width: 100%;
   position: relative;
   bottom: 0;
@@ -212,8 +230,8 @@ footer {
 }
 
 .box__footer a {
-  margin-top: 10px;
-  font-size: 16px;
+  margin-top: 5px;
+  font-size: 18px;
   color: white;
   font-weight: 600;
   text-decoration: none;
@@ -225,7 +243,8 @@ footer {
 
 /* SlideShow */
 
-.carousel{
+.carousel {
+  font-family: "Space Mono", monospace;
   display: flex;
   position: relative;
 }
@@ -239,12 +258,101 @@ footer {
   transform: translate(50%);
 }
 
-.carousel .carousel-control-prev{
+.carousel .carousel-control-prev {
   left: 50%;
   transform: translate(-200%);
 }
 
-.carousel .carousel-control-next{
+.carousel .carousel-control-next {
   right: 50%;
   transform: translate(200%);
+}
+
+/* PLANETAS */
+
+.container {
+  margin-bottom: 50px;
+}
+
+.container h1 {
+  font-family: "Space Mono", monospace;
+  text-decoration: underline;
+  color: #fff;
+  text-align: center;
+}
+
+#planet {
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  position: relative;
+  background-size: cover;
+  box-shadow: -25px -25px 25px black inset, 10px 10px 30px rgb(186, 186, 186) inset, 0px 0px 20px  #a9a9a9;
+  animation: rotate 15s linear infinite;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+
+.mercurio{
+background-image: url(https://cdn.pixabay.com/photo/2020/02/04/17/08/map-4818866_960_720.jpg); 
+}
+
+.venus {
+  background-image: url(https://cdn.pixabay.com/photo/2020/02/04/17/12/map-4818876_1280.jpg);
+}
+
+.terra {
+  background-image: url(https://www.gisandbeers.com/wp-content/uploads/2018/09/Descargar-Blue-Marble-de-la-NASA.jpg);
+}
+
+.marte {
+  background-image: url(../planetas/Marte/img/4.jpeg);
+}
+
+.jupiter {
+  background-image: url(https://cdn.sci.news/images/enlarge2/image_3337_1e-Jupiter-Map.jpg);
+}
+
+.saturno {
+  background-image: url(../planetas/Saturno/imagens/4.jpg);
+}
+
+.urano {
+  background-image: url(https://static.vecteezy.com/ti/vetor-gratis/t1/1998851-abstract-background-of-uranus-surface-gratis-vetor.jpg);
+}
+
+.netuno {
+  background-image: url(../planetas/4.jpeg);
+}
+
+#planet a {
+  font-family: "Space Mono", monospace;
+  position: absolute;
+  font-size: 40px;
+  color: none;
+  visibility: hidden  ;
+  text-decoration: none;
+  text-shadow: 0px 0px 5px black;
+  top: 50%;
+}
+
+#planet:hover a{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  padding: 40%;
+  margin-left: -12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  visibility: visible;
+  color: white;
+  position: relative;
+
+}
+
+@keyframes rotate {
+  to {
+    background-position: 100%;
+  }
 }

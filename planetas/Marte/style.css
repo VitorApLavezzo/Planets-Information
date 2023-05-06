@@ -26,6 +26,7 @@
 }
 
 .TextRig {
+  font-family: "Space Mono", monospace;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -41,27 +42,28 @@
 .TextRig p {
   color: white;
   text-align: center;
-  margin-bottom: 30px;
-  font-size: 20px;
+  margin-bottom: 2px;
+  font-size: min(20px, 1vw);
   padding-left: 10px;
-  padding: 10px;
+  padding: 7px;
 }
 
 .TextRig h1 {
-  font-size: 30px;
+  font-size: min(30px, 1vw);
   text-decoration: underline;
   text-align: center;
-  padding: 10px;
+  padding: 3px;
 }
 
 .TextRig2 {
+  font-family: "Space Mono", monospace;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-top: 15px;
   padding: 10px;
   width: 29%;
-  height: 570px;
+  height: 100%px;
   float: right;
   background-color: rgba(100, 84, 80, 0.4);
   border-radius: 25px;
@@ -71,19 +73,20 @@
   color: white;
   text-align: center;
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: min(20px, 1vw);
   padding-left: 10px;
   padding: 10px;
 }
 
 .TextRig2 h1 {
-  font-size: 30px;
+  font-size: min(30px, 1vw);
   text-decoration: underline;
   text-align: center;
   padding: 10px;
 }
 
 .TextLef {
+  font-family: "Space Mono", monospace;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -92,26 +95,27 @@
   height: 100%;
   float: left;
   background-color: rgba(61, 50, 47, 0.3);
-  border-radius: 25px;  
+  border-radius: 25px;
 }
 
 .TextLef p {
   color: white;
   text-align: center;
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: min(20px, 1vw);
+  margin-bottom: 10px;
   padding-left: 10px;
-  padding: 10px;
+  padding: 7px;
 }
 
 .TextLef h1 {
   text-decoration: underline;
-  font-size: 30px;
+  font-size: min(30px, 1vw);
   text-align: center;
   padding: 8px;
 }
 
 .TextMid {
+  font-family: "Space Mono", monospace;
   position: relative;
   margin-top: 15px;
   width: 100%;
@@ -121,17 +125,16 @@
   border-radius: 25px;
   left: 50%;
   transform: translate(-50%);
-  margin-bottom: 16%;
+  margin-bottom: 15%;
 }
 
 .TextMid p {
   text-align: center;
-  font-size: 20px;
-
+  font-size: min(20px, 1vw);
 }
 
 .TextMid h1 {
-  font-size: 30px;
+  font-size: min(30px, 1vw);
   text-decoration: underline;
   text-align: center;
   padding: 15px;
@@ -141,7 +144,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+}
 
 html {
   font-family: "Space Mono", monospace;
@@ -164,9 +167,10 @@ p {
   font-size: 18px;
 }
 
-/* NavBar */
+/* Navabar */
 
 .myTopnav {
+  font-family: "Space Mono", monospace;
   display: flex;
   border-radius: 10px;
   margin-top: 10px;
@@ -184,12 +188,6 @@ p {
   transition: all 1s;
 }
 
-.navbar .icon i:hover {
-  color: #f3f3f3;
-  -webkit-transform: rotateZ(180deg);
-  transform: rotateZ(180deg);
-}
-
 .myTopnav img {
   width: 250px;
   height: 200px;
@@ -199,6 +197,13 @@ p {
   margin-bottom: -35px;
 }
 
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.1;
+  text-decoration: none;
+}
+
 .links {
   margin-left: auto;
   margin-right: auto;
@@ -206,6 +211,7 @@ p {
 }
 
 .links a {
+  font-family: "Space Mono", monospace;
   font-weight: bold;
   margin: 15px;
   font-size: 21px;
@@ -253,8 +259,10 @@ p {
   color: #fff;
   text-decoration: none;
   display: block;
-  font-size: 17px;
-  text-align: left;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  padding: 6px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -262,41 +270,15 @@ p {
 }
 
 @media screen and (max-width: 700px) {
+
   .myTopnav a:not(:first-child),
   .dropdown .dropbtn {
     display: none;
   }
+
   .myTopnav a.icon {
     float: right;
     display: block;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .myTopnav.responsive {
-    position: relative;
-  }
-  .myTopnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .myTopnav.responsive a {
-    float: none;
-    display: block;
-    text-align: center;
-  }
-
-  .navbar.responsive .dropdown {
-    float: inline-end;
-  }
-  .navbar.responsive .dropdown-content {
-    position: absolute;
-  }
-  .navbar.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: center;
   }
 }
 
@@ -330,7 +312,8 @@ footer {
 }
 
 .textoprin h3 {
-  font-size: 20px;
+  font-size: min(20px, 5vw);
+
 }
 
 .box__footer {
@@ -342,14 +325,15 @@ footer {
 
 .box__footer h1 {
   margin-bottom: 5px;
-  font-size: 30px;
+  font-size: min(30px, 5vw);
   color: white;
   font-weight: 700;
+  text-align: center;
 }
 
 .box__footer a {
-  margin-top: 10px;
-  font-size: 16px;
+  margin-top: 5px;
+  font-size: min(18px, 5vw);
   color: white;
   font-weight: 600;
   text-decoration: none;

@@ -4,13 +4,11 @@ html {
   padding: 0 35px;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    rgb(133, 65, 38),
-    rgb(189, 131, 25),
-    rgb(212, 166, 79),
-    rgb(133, 65, 38),
-    rgba(1206, 175, 103)
-  );
+  background: linear-gradient(rgb(133, 65, 38),
+      rgb(189, 131, 25),
+      rgb(212, 166, 79),
+      rgb(133, 65, 38),
+      rgba(1206, 175, 103));
 }
 
 .organiza_sessao_1 {
@@ -18,11 +16,10 @@ html {
   margin-bottom: 15px;
 
 }
+
 .organiza_sessao_1 img {
+  width: 100%;
   border-radius: 25px;
-}
-.organiza_borda_textos_1 img {
-  width: 70%;
 }
 
 .organiza_borda_textos_1 {
@@ -34,6 +31,7 @@ html {
   justify-content: center;
   flex-direction: column;
 }
+
 .organiza_borda_textos_1 p {
   font-family: "Space Mono", monospace;
   color: white;
@@ -43,25 +41,25 @@ html {
   margin-right: 25px;
 
 }
+
 .organiza_sessao_2 {
   display: flex;
   margin-bottom: 15px;
 }
+
 .organiza_sessao_2 img {
-  width: 650px;
-  height: 400px;
+  width: 50%;
   border-radius: 25px;
 }
+
 .organiza_borda_textos_2 {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   margin-left: 5px;
   margin-right: 5px;
   margin-bottom: 5px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
+
 .organiza_borda_textos_2 p {
   font-family: "Space Mono", monospace;
   color: white;
@@ -71,14 +69,17 @@ html {
   margin-left: 25px;
   margin-right: 25px;
 }
+
 .organiza_sessao_3 {
   display: flex;
   margin-bottom: 15px;
 }
+
 .organiza_sessao_3 img {
   width: 50%;
   border-radius: 25px;
 }
+
 .organiza_borda_textos_3 {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 15px;
@@ -86,6 +87,7 @@ html {
   margin-right: 5px;
   margin-bottom: 5px;
 }
+
 .organiza_borda_textos_3 p {
   font-family: "Space Mono", monospace;
   color: white;
@@ -99,6 +101,7 @@ html {
 /* Navabar */
 
 .myTopnav {
+  font-family: "Space Mono", monospace;
   display: flex;
   border-radius: 10px;
   margin-top: 10px;
@@ -125,6 +128,13 @@ html {
   margin-bottom: -35px;
 }
 
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.1;
+  text-decoration: none;
+}
+
 .links {
   margin-left: auto;
   margin-right: auto;
@@ -132,6 +142,7 @@ html {
 }
 
 .links a {
+  font-family: "Space Mono", monospace;
   font-weight: bold;
   margin: 15px;
   font-size: 21px;
@@ -179,8 +190,10 @@ html {
   color: #fff;
   text-decoration: none;
   display: block;
-  font-size: 17px;
-  text-align: left;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  padding: 6px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -188,10 +201,12 @@ html {
 }
 
 @media screen and (max-width: 700px) {
+
   .myTopnav a:not(:first-child),
   .dropdown .dropbtn {
     display: none;
   }
+
   .myTopnav a.icon {
     float: right;
     display: block;
@@ -202,11 +217,13 @@ html {
   .myTopnav.responsive {
     position: relative;
   }
+
   .myTopnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
+
   .myTopnav.responsive a {
     float: none;
     display: block;
@@ -216,9 +233,11 @@ html {
   .myTopnav.responsive .dropdown {
     float: inline-end;
   }
+
   .myTopnav.responsive .dropdown-content {
     position: absolute;
   }
+
   .myTopnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
@@ -229,6 +248,7 @@ html {
 /* Rodapé */
 
 footer {
+  font-family: "Space Mono", monospace;
   width: 100%;
   position: relative;
   bottom: 0;
@@ -274,8 +294,8 @@ footer {
 }
 
 .box__footer a {
-  margin-top: 10px;
-  font-size: 16px;
+  margin-top: 5px;
+  font-size: 18px;
   color: white;
   font-weight: 600;
   text-decoration: none;
