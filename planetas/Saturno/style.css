@@ -14,11 +14,10 @@ html {
 .organiza_sessao_1 {
   display: flex;
   margin-bottom: 15px;
-
 }
 
 .organiza_sessao_1 img {
-  width: 100%;
+  width: 50%;
   border-radius: 25px;
 }
 
