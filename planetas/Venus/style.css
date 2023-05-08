@@ -126,7 +126,7 @@ html {
   margin-bottom: 50px;
 }
 
-.txt3 li{
+.txt3 li {
   text-decoration: underline;
   text-align: left;
   font-size: 26px;
@@ -288,6 +288,7 @@ html {
     text-align: center;
   }
 }
+
 /* Rodapé */
 
 footer {
