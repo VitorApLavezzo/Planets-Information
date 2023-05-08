@@ -5,35 +5,142 @@
 }
 
 html {
-  font-family: "Space Mono", monospace;
+  position: absolute;
   display: flex;
   padding: 0 35px;
-  align-items: center;
   justify-content: center;
-  background: linear-gradient(#2e547f, #2e547f, #5e3a7a, #25292f, #25292f);
+  align-items: center;
+  background: linear-gradient(#000000, #000000, rgb(216, 158, 0), rgb(255, 123, 0))
 }
 
-h1 {
+.img1 {
+  display: flex;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.img1 img {
+  width: 50%;
+  padding-top: 15px;
+  border-radius: 25px;
+}
+
+.img2 {
+  display: flex;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.img2 img {
+  width: 50%;
+  float: right;
+  border-radius: 25px;
+}
+
+.img3 {
+  display: flex;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.img3 img {
+  width: 50%;
+  float: right;
+  border-radius: 25px;
+}
+
+.txt1 {
   font-family: "Space Mono", monospace;
-  color: #fff;
-  margin-bottom: 30px;
-  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 10px;
+  background-color: rgba(112, 112, 112, 0.4);
+  border-radius: 25px;
 }
 
-p { 
-  color: #fff;
+.txt1 h1 {
+  font-size: 40px;
+  text-decoration: underline;
   text-align: center;
-  font-size: 20px;
-  margin-bottom: 30px;
+  padding: 3px;
 }
 
-.texto {
+.txt1 p {
+  text-align: center;
+  margin-bottom: 2px;
+  font-size: 22px;
+  padding-left: 10px;
+  padding: 7px;
+}
+
+.txt2 {
   font-family: "Space Mono", monospace;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 10px;
+  background-color: rgba(112, 112, 112, 0.4);
+  border-radius: 25px;
+  margin-top: 15px;
+}
+
+.txt2 h1 {
+  font-size: 40px;
+  text-decoration: underline;
+  text-align: center;
+  padding: 3px;
+}
+
+.txt2 p {
+  text-align: center;
+  margin-bottom: 2px;
+  font-size: 22px;
+  padding-left: 10px;
+  padding: 7px;
+}
+
+.txt3 {
+  font-family: "Space Mono", monospace;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 10px;
+  background-color: rgba(112, 112, 112, 0.4);
+  border-radius: 25px;
+  margin-top: 15px;
+}
+
+.txt3 h1 {
+  font-size: 40px;
+  text-decoration: underline;
+  text-align: center;
+  padding: 3px;
   margin-bottom: 50px;
 }
+
+.txt3 li{
+  text-decoration: underline;
+  text-align: left;
+  font-size: 26px;
+  margin-left: 10px;
+}
+
+.txt3 p {
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: left;
+  font-size: 22px;
+}
+
 
 /* Navabar */
 
@@ -79,6 +186,7 @@ p {
 }
 
 .links a {
+  font-family: "Space Mono", monospace;
   font-weight: bold;
   margin: 15px;
   font-size: 21px;
@@ -180,7 +288,6 @@ p {
     text-align: center;
   }
 }
-
 /* Rodapé */
 
 footer {
@@ -201,7 +308,6 @@ footer {
   justify-content: space-between;
   max-width: 600px;
   margin: auto;
-  margin-top: -30px;
 }
 
 .textoprin {
@@ -239,122 +345,4 @@ footer {
 
 .box__footer a:hover {
   opacity: 0.7;
-}
-
-/* SlideShow */
-
-.carousel {
-  font-family: "Space Mono", monospace;
-  display: flex;
-  position: relative;
-}
-
-.carousel img {
-  height: 400px;
-  border-radius: 25px;
-  object-fit: cover;
-  user-select: none;
-  left: 50%;
-  transform: translate(50%);
-}
-
-.carousel .carousel-control-prev {
-  left: 50%;
-  transform: translate(-200%);
-}
-
-.carousel .carousel-control-next {
-  right: 50%;
-  transform: translate(200%);
-}
-
-/* PLANETAS */
-
-.container {
-  margin-bottom: 50px;
-}
-
-.container h1 {
-  font-family: "Space Mono", monospace;
-  text-decoration: underline;
-  color: #fff;
-  text-align: center;
-}
-
-#planet {
-  width: 300px;
-  height: 300px;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 50%;
-  position: relative;
-  background-size: cover;
-  box-shadow: -25px -25px 25px black inset, 10px 10px 30px rgb(186, 186, 186) inset, 0px 0px 20px  #a9a9a9;
-  animation: rotate 15s linear infinite;
-  margin-bottom: 30px;
-  margin-right: 20px;
-}
-
-.mercurio{
-background-image: url(https://cdn.pixabay.com/photo/2020/02/04/17/08/map-4818866_960_720.jpg); 
-}
-
-.venus {
-  background-image: url(https://cdn.pixabay.com/photo/2020/02/04/17/12/map-4818876_1280.jpg);
-}
-
-.terra {
-  background-image: url(https://www.gisandbeers.com/wp-content/uploads/2018/09/Descargar-Blue-Marble-de-la-NASA.jpg);
-}
-
-.marte {
-  background-image: url(../planetas/Marte/img/4.jpeg);
-}
-
-.jupiter {
-  background-image: url(https://cdn.sci.news/images/enlarge2/image_3337_1e-Jupiter-Map.jpg);
-}
-
-.saturno {
-  background-image: url(../planetas/Saturno/imagens/4.jpg);
-}
-
-.urano {
-  background-image: url(https://static.vecteezy.com/ti/vetor-gratis/t1/1998851-abstract-background-of-uranus-surface-gratis-vetor.jpg);
-}
-
-.netuno {
-  background-image: url(../planetas/Netuno/images/4.jpeg);
-}
-
-#planet a {
-  font-family: "Space Mono", monospace;
-  position: absolute;
-  font-size: 40px;
-  color: none;
-  visibility: hidden  ;
-  text-decoration: none;
-  text-shadow: 0px 0px 5px black;
-  top: 50%;
-  width: 300px;
-  height: 300px;
-  transition: transform 0.5s;
-  transform: scale(0.5);
-}
-
-#planet:hover a{
-  border-radius: 50%;
-  padding: 40%;
-  margin-left: -12px;
-  background-color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  visibility: visible;
-  color: white;
-  position: relative;
-  transform:scale(1);
-}
-
-@keyframes rotate {
-  to {
-    background-position: 100%;
-  }
 }

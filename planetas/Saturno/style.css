@@ -22,6 +22,7 @@ html {
 }
 
 .organiza_borda_textos_1 {
+  color: white;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   margin-left: 5px;
@@ -31,11 +32,17 @@ html {
   flex-direction: column;
 }
 
+.organiza_borda_textos_1 h1 {
+  font-size: 40px;
+  text-decoration: underline;
+  text-align: center;
+  padding: 3px;
+}
+
 .organiza_borda_textos_1 p {
   font-family: "Space Mono", monospace;
-  color: white;
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
   margin-left: 25px;
   margin-right: 25px;
 
@@ -52,6 +59,7 @@ html {
 }
 
 .organiza_borda_textos_2 {
+  color: white;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   margin-left: 5px;
@@ -59,12 +67,18 @@ html {
   margin-bottom: 5px;
 }
 
+.organiza_borda_textos_2 h1 {
+  font-size: 40px;
+  text-decoration: underline;
+  text-align: center;
+  padding: 3px;
+}
+
 .organiza_borda_textos_2 p {
   font-family: "Space Mono", monospace;
-  color: white;
   text-align: center;
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 22px;
   margin-left: 25px;
   margin-right: 25px;
 }
@@ -80,6 +94,7 @@ html {
 }
 
 .organiza_borda_textos_3 {
+  color: white;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   margin-left: 5px;
@@ -87,12 +102,18 @@ html {
   margin-bottom: 5px;
 }
 
+.organiza_borda_textos_3 h1 {
+  font-size: 40px;
+  text-decoration: underline;
+  text-align: center;
+  padding: 3px;
+}
+
 .organiza_borda_textos_3 p {
   font-family: "Space Mono", monospace;
-  color: white;
   text-align: center;
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 22px;
   margin-left: 25px;
   margin-right: 25px;
 }
